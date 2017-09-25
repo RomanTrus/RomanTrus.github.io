@@ -123,10 +123,10 @@ b=!0;break a}}b=!1}b&&(Ba=!0)}Ud()||Ba||!Ed(new Od(1E4))||(J(36),Ba=!0);(O.gaplu
 
   <body>
     <header>
-      <a href="/"><img src="img/profilepic.jpg"></a>
+      <a href="/"><img class="image" ></a>
       <p>Cameron Pittman<br><span>Course Developer</span></p>
       <br>
-      <a href="/"><img src="img/myProfilepic.jpg"></a>
+      <a href="/"><img class="image"></a>
       <p>Raman Trus<br><span>+375259530716 <a href="mailto:radadendronroma@gmail.com">radadendronroma@gmail.com</a> </span></p>
     </header>
 
@@ -138,25 +138,25 @@ b=!0;break a}}b=!1}b&&(Ba=!0)}Ud()||Ba||!Ed(new Od(1E4))||(J(36),Ba=!0);(O.gaplu
       <div class="content">
         <ul>
           <li>
-            <img src="img/2048.jpg">
+            <img class="image" src=>
             <a href="project-2048.html">Build Your Own 2048!</a>
             <p>I made my own version of 2048. How cool is that!?</p>
           </li>
 
           <li>
-            <img src="img/familiar.jpg">
+            <img  class="image" src=>
             <a href="project-webperf.html">Website Performance Optimization</a>
             <p>Hey... this class looks familiar.</p>
           </li>
 
           <li>
-            <img src="img/phones.jpg">
+            <img class="image" src=>
             <a href="project-mobile.html">Mobile Web Development</a>
             <p>Making mobile apps isn't so hard after all.</p>
           </li>
 
           <li>
-            <img style="width: 100px;" src="views/images/pizzeria.jpg">
+            <img style="width: 100px;" class="image" src=>
             <a href="views/pizza.html">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
@@ -179,6 +179,13 @@ b=!0;break a}}b=!1}b&&(Ba=!0)}Ud()||Ba||!Ed(new Od(1E4))||(J(36),Ba=!0);(O.gaplu
     logCRP();
   });
 
+      </script>
+      <script>
+      var arrayOfImages=document.getElementsByClassName('image')
+      var arrayOfSources=["img/profilepic.jpg","img/myProfilepic.jpg","img/2048.jpg","img/familiar.jpg","img/phones.jpg","views/images/pizzeria.jpg"]
+      for (var i=0;i<arrayOfImages.length;i++){
+        arrayOfImages[i].src=arrayOfSources[i];
+      }
       </script>
     </div>
         <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
