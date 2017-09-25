@@ -108,7 +108,7 @@ footer {
 
           <li>
             <img style="width: 100px;" class="image">
-            <a href="views/pizza.html">Cam's Pizzeria</a>
+            <a class="image">Cam's Pizzeria</a>
             <p>Who wants a performant pizza?</p>
           </li>
         </ul>
@@ -185,12 +185,13 @@ b=!0;break a}}b=!1}b&&(Ba=!0)}Ud()||Ba||!Ed(new Od(1E4))||(J(36),Ba=!0);(O.gaplu
   stats.textContent = 'DCL: ' + dcl + 'ms, onload: ' + complete + 'ms';
 }
 
-function images(){
-      let arrayOfImages=document.querySelectorAll('.image')
-      let arrayOfSources=['img/profilepic.jpg','img/my.jpg','img/1.jpg','img/2.jpg','img/3.jpg','views/images/pizzeria.jpg'];
-      Array.from(arrayOfImages).forEach((name,i)=>{
-          name.setAttribute('src', arrayOfSources[i]);
-      });
+
+    fuction images(){
+    var arrayOfImages=document.querySelectorAll('.image')
+    var arrayOfSources=["img/profilepic.jpg","img/myProfilepic.jpg","img/2048.jpg","img/familiar.jpg","img/phones.jpg","views/images/pizzeria.jpg"]
+    for (var i=0;i<arrayOfImages.length;i++){
+      arrayOfImages[i].src=arrayOfSources[i];
+    }
   }
     window.addEventListener("load", function(event) {
       logCRP();
